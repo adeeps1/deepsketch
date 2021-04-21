@@ -62,7 +62,7 @@ new p5(function(p) {
       
     
     //Initialize the canvas
-    drawCanvas = p.createCanvas(1080,1080 );
+    drawCanvas = p.createCanvas(p.windowWidth, p.windowHeight);
     drawCanvas.id("drawingCanvas");
     drawCanvas.position(0, 0);  
     
@@ -195,7 +195,7 @@ new p5(function(p) {
 new p5(function(p) {
 
   	p.setup = function() {
-      uiCanvas = p.createCanvas(1080,1080);
+      uiCanvas = p.createCanvas(p.windowWidth, p.windowHeight);
       uiCanvas.id("uiCanvas");
       uiCanvas.position(0, 0);
     }
