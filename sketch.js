@@ -195,7 +195,7 @@ new p5(function(p) {
 new p5(function(p) {
 
   	p.setup = function() {
-      uiCanvas = p.createCanvas(p.windowWidth, p.windowHeight);
+      uiCanvas = p.createCanvas(1080,1080);
       uiCanvas.id("uiCanvas");
       uiCanvas.position(0, 0);
     }
@@ -205,7 +205,9 @@ new p5(function(p) {
       uiCanvas.clear();
       
       if(showDebug){
-        p.text("pressure = " + pressure, 10, 20);
+        p.text("pressure = " + pressure + " X = " + p.mouseX + " Y = " + p.mouseY, 10, 20);
+	
+	//p.text("Y = " + pressure, 10, 20);
         
         p.stroke(200,50);
         p.line(p.mouseX,0,p.mouseX,p.height);
