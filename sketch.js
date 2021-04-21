@@ -62,7 +62,7 @@ new p5(function(p) {
       
     
     //Initialize the canvas
-    drawCanvas = p.createCanvas(p.windowWidth, p.windowHeight);
+    drawCanvas = p.createCanvas(1080,1080 );
     drawCanvas.id("drawingCanvas");
     drawCanvas.position(0, 0);  
     
