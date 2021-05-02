@@ -1,16 +1,24 @@
-<!DOCTYPE html><html><head>
-    <script src="p5.min.js"></script>
-    <script src="p5.dom.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <script src="pressure.min.js"></script>
-    <script src="oneEuroFilter.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <title>deep sketch2</title>
 
+  <script src="https://cdn.rawgit.com/magicien/undo-canvas/v0.1.3/undo-canvas.js"></script>
   </head>
   <body>
-     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekQuy1iZuoFg2uGmZXCSGbNdzR8OWBvIrKy3IvI_XwiUlbjA/viewform?embedded=true" width="640" height="1151" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-   
-  
-
-</body></html>
+    <script src="sketch.js"></script>
+      <div style="width: 300px; padding: 0 20px; margin: 0; text-align: center;">
+    <canvas id="undoCanvas" width="1000" height="700"></canvas><br />
+    <button id="undoTagButton">Undo stoke</button>
+    <button id="undoButton">Undo</button>
+    <input id="historyNo" type="text" disabled style="width: 40px; text-align: right"/>
+    <button id="redoButton">Redo</button>
+    <button id="redoTagButton">Redo stoke</button><br />
+    <input id="historySlider" type="range" step="1" style="width: 100%;"/>
+  </div>
+  </body>
+</html>
