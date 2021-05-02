@@ -13,13 +13,14 @@
     <script src="sketch.js"></script>
       <div style="width: 300px; padding: 0 20px; margin: 0; text-align: center;">
         
-    <button id="undoTagButton">Undo stoke</button>
+    <canvas id="undoCanvas" width="1000" height="700"></canvas><br />
+         <button id="undoTagButton">Undo stoke</button>
     <button id="undoButton">Undo</button>
     <input id="historyNo" type="text" disabled style="width: 40px; text-align: right"/>
     <button id="redoButton">Redo</button>
     <button id="redoTagButton">Redo stoke</button><br />
     <input id="historySlider" type="range" step="1" style="width: 100%;"/>
-    <canvas id="undoCanvas" width="1000" height="700"></canvas><br />
+   
   </div>
   </body>
 </html>
